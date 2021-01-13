@@ -15,7 +15,7 @@ class _PaymentState extends State<Payment> {
   Token _paymentToken;
   PaymentMethod _paymentMethod;
   String _error;
-  final String _currentSecret = "sk_test_51GxtPhGXrIPXXF3ql5cFhY3KCgCYfibaDLlep2xTvsQOOtOhWzxh1954eiKwx50sYuRycvb8dAYRFED4JMo4WRR500JMf8ZQjy"; //set this yourself, e.g using curl
+  final String _currentSecret = "Your_Secret_key"; //set this yourself, e.g using curl
   PaymentIntentResult _paymentIntent;
   Source _source;
 
@@ -34,8 +34,8 @@ class _PaymentState extends State<Payment> {
     super.initState();
 
     StripePayment.setOptions(
-        StripeOptions(publishableKey: "pk_test_51GxtPhGXrIPXXF3qyLJfrZKWSlSIq6iQNCD2XiyGAimnCvv2kE9cmgCIMcO3uzId0LS2vRKL7XHiAfoklrL5YEKU00GM0wkpdR",
-            merchantId: "Test",
+        StripeOptions(publishableKey: "Your_Publish_key",
+            merchantId: "Your_Merchant_id",
             androidPayMode: 'test'));
   }
 
